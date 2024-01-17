@@ -1,0 +1,8 @@
+We have used the dataset from: http://files.grouplens.org/datasets/movielens/ml-100k.zip
+
+We found a dataset for
+    - users: age, sex, occupation, zip code
+    - ratings: scores from 1 to 5
+    - movies: name, genere, title, release_date, url
+
+

@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  download_db:
+    cmd: wget http://files.grouplens.org/datasets/movielens/ml-100k.zip -O ml-100k.zip
+    deps:
+    - path: http://files.grouplens.org/datasets/movielens/ml-100k.zip
+      hash: md5
+      checksum: '"4b227d-598cfd31b571f"'
+      size: 4924029
+    - path: ml-100k.zip
+      hash: md5
+      md5: 0e33842e24a9c977be4e0107933c0723
+      size: 4924029
+  knn:
+    cmd: python3 recommender_models/KNN_user_rec.py
+    deps:
+    - path: ml-100k.zip
+      hash: md5
+      md5: 0e33842e24a9c977be4e0107933c0723
+      size: 4924029
+    - path: recommender_models/KNN_user_rec.py
+      hash: md5
+      md5: 7b1df3f77e88bb1c70d31a7de91bdff1
+      size: 4081

@@ -1,0 +1,11 @@
+stages:
+  download_db:
+    cmd: wget http://files.grouplens.org/datasets/movielens/ml-100k.zip -O ml-100k.zip
+    deps:
+      - http://files.grouplens.org/datasets/movielens/ml-100k.zip
+      - ml-100k.zip
+  knn:
+    cmd: python3 recommender_models/KNN_user_rec.py
+    deps:
+      - recommender_models/KNN_user_rec.py
+      - ml-100k.zip
