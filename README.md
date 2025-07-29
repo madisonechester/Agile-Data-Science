@@ -11,9 +11,9 @@ This repository contains coursework and exercises completed for the **Agile Data
 - Learn best practices for reproducible and maintainable data science projects  
 
 ## Repository Contents
-- **GIT/**: Exercises on version control workflows  
-- **MongoDB/**: Scripts for working with NoSQL data storage and queries  
-- **Pandas/**: Data wrangling and analysis exercises  
-- **Movie-Recommender/**: A simple recommender system implemented as a demo project  
+- **GIT**: Exercises on version control workflows  
+- **MongoDB**: Scripts for working with NoSQL data storage and queries  
+- **Pandas**: Data wrangling and analysis exercises  
+- **Movie-Recommender**: A recommender system implemented as a demo project  
 - **Flask.py**: Minimal Flask application example for deployment  
-- **agiledatascience_labs/**: Jupyter notebooks and lab materials for hands-on practice  
+- **agiledatascience_labs**: Jupyter notebooks and lab materials for hands-on practice  
